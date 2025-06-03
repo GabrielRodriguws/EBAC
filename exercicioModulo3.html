@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #Lname{display: inline-block;
+            width: 50px;
+            margin-bottom: 8px;
+        }
+        #name{
+            max-width: 200px;
+        }
+        #Lemail{
+            display: inline-block;
+            width: 50px;
+            margin-bottom: 8px;
+        }
+        #email{
+            max-width: 200px;
+        }
+        #Lpassword{
+            display: inline-block;
+            width: 50px;
+            margin-bottom: 8px;
+        }
+        #password{
+            max-width: 200px;
+        }
+        #MensagemCadastro{
+            color: green; font-weight: bold;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <section>
+            <h1>Formulário de cadastro</h1><br>
+            <form id="formCadastro">
+                <label id="Lname" for="name">Nome:</label>
+                <input id="name" type="text" placeholder="Insira seu nome"><br>
+                <label id="Lemail" for="email">E-mail:</label>
+                <input id="email" type="text" placeholder="Insira seu email"><br>
+                <label id="Lpassword" for="password">Senha:</label>
+                <input id="password" type="password" placeholder="Insira sua senha"><br>
+                    <input id="SingOn" type="submit" value="Cadastrar">
+            </form>
+            <p id="MensagemCadastro"></p>
+        </section>
+        <script>
+            document.getElementById('formCadastro').addEventListener('submit',function(event) {
+                event.preventDefault();
+                document.getElementById('MensagemCadastro').textContent = 'Obrigado por se cadastrar'
+            })
+        </script>
+</body>
+</html>
