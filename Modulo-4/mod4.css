@@ -1,7 +1,82 @@
-html {
+html, body{
     scroll-behavior: smooth;
 }
 body{
+    background-color: azure;
+    color: black;
+    width: 100%;
+    margin:0, auto;
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+}
+body h2{
+    text-align: center;
+    padding: 15px
+}
+header{
+    width: 100%;
+    background-color: black;
+    color: azure;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.menu{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+.menu a{
+    text-decoration: none;
+    color: inherit;
+}
+.menu a:hover{
+    text-decoration: underline;
+}
+.menu ul{
+    padding-right: 10px;
+}
+.menu li{
+    display: inline;
+    position: static;
+    padding: 5px;
+}
+.menu h1{
+    margin: 0;
+    position: static;
+    padding-left: 15px;
+}
+body img{
+width: 260px;
+}
+.artigos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+.artigos article{
+    width: 30%;
+    position: relative;
+    padding-bottom: 25px;
+}
+.artigos article img{
+    width: 100%;
+    display: block;
+}
+.artigos header{
+    background-color: azure;
+    color: black;
+    padding-bottom: 5px;
+    padding-top: 1px;
+}
+footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
     background-color: black;
     color: azure;
 }
