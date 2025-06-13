@@ -1,77 +1,71 @@
 html, body{
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /*minha tentativa de rolagem sauve*/
 }
 body{
-    background-color: azure;
-    color: black;
-    width: 100%;
-    margin:0, auto;
+    background-color: azure; /*cor do corpo de fundo da minha pagina, a ideal inicial é que só os artigos teriam fundo branco e ficariam flutuando sobre o fundo preto, mas acho que assim tem um ar mais profissional*/
+    color: black;/*cor do texto do body em contraste com o fundo*/
+    width: 100%;/*sei que por padrão a largura da pagina é 100% mas isso faz eu sentir que esta mais correto kkk*/
+    margin:0 auto;/*não sou um profissdional e por tanto n entendo muito, mas sei que sem isso meu header e footer ficavam flutando no fundo branco*/
     font-family: monospace;
-    margin: 0;
-    padding: 0;
+    padding: 0;/*tambem tem a ver com bordas brancas no footer e header, entendi que é uma margem do body que n dava para preencher sem essa config*/
 }
 body h2{
     text-align: center;
     padding: 15px
-}
+}/*essa sessão centralidza é cria um espaço ao meu ver agradavel para dar inicio as sessões com as noticias*/
 header{
-    width: 100%;
-    background-color: black;
-    color: azure;
+    width: 100%;/*isso acredito eu que force ele a ocupar a totalidade da largura da pagina ja que não queria ele flutaundo sobre o fundo*/
+    background-color: black;/*cor de fundo do meu heeader*/
+    color: azure;/*cor do texto do meu header, o oposto do corpo da pagina*/
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 20px;/*esses ultimos dois me ajudam a dar a largura do meu header para cima e para baixo, dando mais aspecto de menu*/
 }
 .menu{
-    display: flex;
-    align-content: center;
-    justify-content: space-between;
+    display: flex;/*pelo que eu entendi sempre organiza o conteudo de forma horizontal e permite certa flexibilade em personalizações*/
+    align-content: center;/*ordena que o local padrão dos itens seja o centro e trabalha para que a proxima linha tenha o efeito desejavel*/
+    justify-content: space-between;/*faz com que todo espaço resntante dentro do header seja colocado de forma igual entre os itens como só tenho dois itens cada um fica em um canto*/
 }
 .menu a{
-    text-decoration: none;
-    color: inherit;
+    text-decoration: none;/*remove os sublinhado dos itens*/
+    color: inherit;/*pelo que eu entendi remove a coloração de "link" tornando-o igual a qualquer texto do site*/
 }
 .menu a:hover{
-    text-decoration: underline;
+    text-decoration: underline;/*define uma ação para quando o mouse sobrevoar por cima do alvo do codigo*/
 }
 .menu ul{
-    padding-right: 10px;
+    padding-right: 10px;/*add 10px de espaço a direita da lista com os links, o total é 15px somando os cincos já adicionados na linha a baixo*/ 
 }
 .menu li{
-    display: inline;
-    position: static;
-    padding: 5px;
+    display: inline;/*define os itnes da minha lista como em linha*/
+    padding: 5px;/*define um espaçamento interno entre cada <li> de 5px exeto pelo ultimo da direita que é somado aos 10px difinidos para o <ul>*/
 }
 .menu h1{
     margin: 0;
-    position: static;
     padding-left: 15px;
 }
-body img{
-width: 260px;
-}
 .artigos{
-    display: flex;
-    flex-wrap: wrap;
+    display: flex;/*defina os artigos no estilo flex*/
+    flex-wrap: wrap;/*faz com que caso o itens ultrapassem o limite de espaço definido sejam adicionados na proxima linha*/
     justify-content: space-between;
     padding: 20px;
 }
 .artigos article{
     width: 30%;
     position: relative;
-    padding-bottom: 25px;
+    padding-bottom: 25px;/*cria um espaço maior entre o artigo atual e o proximo*/
 }
 .artigos article img{
-    width: 100%;
+    width: 100%;/*faz com que a imagem ocupe 100% do espaço do artigo em largura*/
     display: block;
 }
 .artigos header{
     background-color: azure;
     color: black;
     padding-bottom: 5px;
-    padding-top: 1px;
+    padding-top: 1px;/*essa sessão por assim dizer resolve um bug quando fiz minhas mudaças no meu header no topo do body esse tambem foi afetado essas linha de codigo corrigem isso*/
 }
 footer{
-    position: relative;
+    position: relative;/*fez com que meu footer ficasse sempre no fim da pagina*/
     bottom: 0;
     left: 0;
     width: 100%;
