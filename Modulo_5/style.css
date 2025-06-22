@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bungee-regular {
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    background-color: aliceblue;
+    color: black;
+    font-family: monospace;
+    font-size: large;
+}
+header{
+    background-color: cornflowerblue;
+    color: aliceblue;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    color: aliceblue;
+    max-width: 1366px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Bungee';
+    font-weight: normal;
+}
+.menu li{
+    display: inline;
+    padding: 5px;
+}
+.menu h1{
+    padding-left: 15px;
+    font-weight: normal;
+}
+.menu ul{
+    padding-right: 10px;
+}
+.menu a{
+    text-decoration: none;
+    color: inherit;
+}
+.menu a:hover{
+    box-shadow: 0 0 0 2px cornflowerblue;
+    border-radius: 6px;
+    padding: 2px;
+    background:steelblue;
+    transition: all 0.2s;
+}
+.logomarcas li{
+    display: inline;
+}
+.container{
+    max-width: 1366px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 20px;
+}
+.container h2{
+    padding-bottom: 10px;
+    color: cornflowerblue;
+}
+.container p{
+    padding-bottom: 5px;
+}
+#fachada{
+    padding-right: 20px;
+}
+.logomarcas img{
+    height: 28px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+.rodape{
+    background-color: black;
+    color: aliceblue;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
