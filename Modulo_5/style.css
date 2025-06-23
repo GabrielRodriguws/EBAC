@@ -1,3 +1,4 @@
+/* Reset de aparencias imposta pelo navegador */
 *{
     margin: 0; /* Remove margens padrão */
     padding: 0; /* Remove espaçamentos internos padrão */
@@ -56,12 +57,13 @@ header{
 .menu a{
     text-decoration: none; /* Remove sublinhado */
     color: inherit; /* Herda cor do menu */
+    padding: 2px;/* espaçamento interno de 2 pixels em todas direções */
 }
 
 /* Efeito hover nos links do menu */
 .menu a:hover{
-    box-shadow: 0 0 0 2px cornflowerblue; /* Borda azul ao redor */
-    border-radius: 6px; /* Bordas arredondadas */
+    box-shadow: 0 0 0 2px steelblue; /* Borda azul ao redor */
+    border-radius: 5px; /* Bordas arredondadas */
     padding: 2px; /* Espaço interno extra */
     background:steelblue; /* Fundo azul escuro */
     transition: all 0.2s; /* Transição suave */
@@ -125,9 +127,6 @@ header{
 .rodape{
     background-color: black; /* Fundo preto */
     color: aliceblue; /* Texto claro */
-    position: relative; /* Posição no fim da pagina*/
-    bottom: 0; /* Sem efeito com position: relative */
-    left: 0; /* Sem efeito com position: relative */
     width: 100%; /* Ocupa toda a largura */
     text-align: center; /* Centraliza texto */
     padding: 20px; /* Espaço interno */
@@ -167,7 +166,7 @@ header{
 
 /* Container da seção contato */
 #contato .container{
-    display: block; /* Layout em bloco (não flex) */
+    display: block; /* Layout em bloco (vertical) */
 }
 
 /* Blocos de métodos de contato */
