@@ -177,11 +177,21 @@ header{
     max-width: 1366px;
     width: 100%;
     align-items: flex-start;
+
 }
 
 .metodos-contato div{
     width: 33%;
     min-width: 200px;
+}
+
+.d1{
+}
+
+.d2{
+}
+
+.d3{
 }
 
 /* Inputs e textarea do formulário de contato */
