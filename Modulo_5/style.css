@@ -1,7 +1,8 @@
+/* Reset de aparencias imposta pelo navegador */
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove espaçamentos internos padrão */
+    box-sizing: border-box; /* Inclui padding e borda no cálculo do tamanho */
 }
 .bungee-regular {
     font-family: "Bungee", sans-serif;
@@ -9,87 +10,265 @@
     font-style: normal;
 }
 
-body{
-    background-color: aliceblue;
-    color: black;
-    font-family: monospace;
-    font-size: large;
+body, input, textarea{
+    background-color: aliceblue; /* Fundo claro */
+    color: black; /* Texto preto */
+    font-family: monospace; /* Fonte monoespaçada */
+    font-size: large; /* Tamanho de fonte maior */
 }
 header{
-    background-color: cornflowerblue;
-    color: aliceblue;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    width: 100%;
+    background-color: cornflowerblue; /* Fundo azul */
+    color: aliceblue; /* Texto claro */
+    padding-top: 20px; /* Espaço acima */
+    padding-bottom: 20px; /* Espaço abaixo */
+    width: 100%; /* Ocupa toda a largura */
 }
 .menu{
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: space-between;
-    color: aliceblue;
-    max-width: 1366px;
-    width: 100%;
-    margin: 0 auto;
-    font-family: 'Bungee';
-    font-weight: normal;
+    display: flex; /* Layout flexível em linha */
+    align-items: center; /* Alinha itens verticalmente ao centro */
+    text-align: center; /* Centraliza texto (pouco efeito aqui) */
+    justify-content: space-between; /* Espaço entre h1 e nav */
+    color: aliceblue; /* Cor do texto */
+    max-width: 1366px; /* Largura máxima do menu */
+    width: 100%; /* Ocupa toda a largura disponível */
+    margin: 0 auto; /* Centraliza o menu na tela */
+    font-family: 'Bungee'; /* Fonte personalizada */
+    font-weight: normal; /* Peso normal da fonte */
 }
+
+/* Itens da lista do menu */
 .menu li{
-    display: inline;
-    padding: 5px;
+    display: inline; /* Exibe itens em linha */
+    padding: 5px; /* Espaço interno */
 }
+
+/* Título do menu */
 .menu h1{
-    padding-left: 15px;
-    font-weight: normal;
+    padding-left: 15px; /* Espaço à esquerda */
+    font-weight: normal; /* Peso normal */
 }
+
+/* Lista de links do menu */
 .menu ul{
-    padding-right: 10px;
+    padding-right: 10px; /* Espaço à direita */
 }
+
+/* Links do menu */
 .menu a{
-    text-decoration: none;
-    color: inherit;
+    text-decoration: none; /* Remove sublinhado */
+    color: inherit; /* Herda cor do menu */
+    padding: 2px;/* espaçamento interno de 2 pixels em todas direções */
 }
+
+/* Efeito hover nos links do menu */
 .menu a:hover{
-    box-shadow: 0 0 0 2px cornflowerblue;
-    border-radius: 6px;
-    padding: 2px;
-    background:steelblue;
-    transition: all 0.2s;
+    box-shadow: 0 0 0 2px steelblue; /* Borda azul ao redor */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 2px; /* Espaço interno extra */
+    background:steelblue; /* Fundo azul escuro */
+    transition: all 0.2s; /* Transição suave */
 }
+
+/* Lista de logos das marcas em linha */
 .logomarcas li{
-    display: inline;
+    display: inline; /* Exibe logos em linha */
 }
+
+/* Container principal do conteúdo */
 .container{
-    max-width: 1366px;
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding: 20px;
+    max-width: 1366px; /* Largura máxima */
+    width: 100%; /* Ocupa toda a largura disponibilizada */
+    margin: 0 auto; /* Centraliza o container */
+    display: flex; /* Layout flexível */
+    flex-wrap: wrap; /* Permite quebra de linha */
+    align-items: flex-start; /* Alinha itens ao topo */
+    justify-content: space-between; /* Espaço entre os itens */
+    padding: 10px; /* Espaço interno */
 }
+
+/* Títulos h2 dentro do container */
 .container h2{
-    padding-bottom: 10px;
-    color: cornflowerblue;
+    font-family: 'bungee'; /* Fonte personalizada */
+    padding-bottom: 15px; /* Espaço abaixo */
+    color: cornflowerblue; /* Cor azul */
+    font-weight: normal; /* Peso normal */
 }
+
+/* Títulos h3 dentro do container */
+.container h3{
+    font-family: 'bungee'; /* Fonte personalizada */
+    padding-bottom: 10px; /* Espaço abaixo */
+    color: cornflowerblue; /* Cor azul */
+    font-weight: normal; /* Peso normal */
+}
+
+/* Parágrafos dentro do container */
 .container p{
-    padding-bottom: 5px;
+    padding-bottom: 5px; /* Espaço abaixo */
+    max-width: 600px; /* Largura máxima */
+    width: 90%; /* Largura relativa ao container */
 }
+
+/* Imagem da fachada */
 #fachada{
-    padding-right: 20px;
+    padding-right: 10px; /* Espaço à direita */
+    max-width: 600px; /* Largura máxima */
+    width: 90%; /* Largura relativa ao container */
 }
+
+/* Imagens das marcas */
 .logomarcas img{
-    height: 28px;
-    padding-right: 10px;
-    padding-top: 10px;
+    height: 28px; /* Altura fixa */
+    padding-right: 10px; /* Espaço à direita */
+    padding-top: 10px; /* Espaço acima */
 }
+
+/* Rodapé do site */
 .rodape{
-    background-color: black;
-    color: aliceblue;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+    background-color: black; /* Fundo preto */
+    color: aliceblue; /* Texto claro */
+    width: 100%; /* Ocupa toda a largura */
+    text-align: center; /* Centraliza texto */
+    padding: 20px; /* Espaço interno */
+    margin-top: 10px; /* Espaço acima do rodapé */
+}
+
+/* Lista de mídias sociais */
+.midias-sociais li{
+    display: flex; /* Itens em linha */
+    justify-content: flex-start; /* Alinha à esquerda */
+    flex-wrap: wrap; /* Permite quebra de linha */
+    gap: 16px; /* Espaço entre itens */
+}
+
+/* Links das mídias sociais */
+.midias-sociais a{
+    text-decoration: none; /* Remove sublinhado */
+    color: inherit; /* Herda cor */
+    margin-right: 0px; /* Sem espaço à direita */
+}
+
+/* Efeito hover nos links das mídias sociais */
+.midias-sociais a:hover{
+    color: rgb(46, 91, 174); /* Cor azul escura */
+    text-decoration: underline; /* Sublinha ao passar o mouse */
+}
+
+/* Imagens das mídias sociais */
+.midias-sociais img{
+    height: auto; /* Altura automática */
+    width: 10%; /* Largura relativa à tela */
+    min-width: 24px; /* Largura mínima */
+    max-width: 48px; /* Largura máxima */
+    margin-right: 0px; /* Sem espaço à direita */
+    margin-bottom: 20px; /* Espaço abaixo */
+}
+
+/* Container da seção contato */
+#contato .container{
+    display: block; /* Layout em bloco (vertical) */
+}
+
+/* Blocos de métodos de contato */
+.metodos-contato{
+    display: flex; /* Layout flexível */
+    justify-content: space-between; /* Espaço entre blocos */
+    flex-wrap: wrap; /* Permite quebra de linha */
+    max-width: 1366px; /* largura maxima da div pai */
+    width: 100%; /* define que a div pai deve ocupar todo a largura de tela disponibilizada */
+    align-items: flex-start;
+
+}
+/* definindo espaçamento responsivo para as div dentro da divi pai */
+.metodos-contato div{
+    width: 33%; /* define a largura das div filha dentro da div pai*/
+    min-width: 200px;
+}
+
+/* segunda div ou div do meio, define uma posição centralizada para os itens dessa div */
+.d2{
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     text-align: center;
-    padding: 20px;
+}
+
+/* o mesmo processo mas para outros tipos de itens */
+.d2 img, .d2 li{
+    justify-content: center;
+    align-items: normal;
+    align-content: center;
+    text-align: center;
+}
+
+/* terceira div ou div do fim da tela a direta, define que os itens devem estar alinhados ao final a direita detertminado pela div pai */
+.d3{
+    justify-content: flex-end;
+    align-items: flex-end;
+    align-content: flex-end;
+    text-align: end;
+}
+
+.d3 p{
+    padding: 0px;
+    text-align: right;
+    width: 100%;
+}
+
+/* Inputs e textarea do formulário de contato */
+.metodos-contato form input,
+.metodos-contato form textarea{
+    display: block; /* Ocupa linha inteira */
+    width: 80%; /* largura ocupada dentro da sua div */
+    margin-bottom: 5px; /* Espaço abaixo */
+    padding: 5px; /* Espaço interno */
+    border-style: ridge; /* Borda com relevo */
+    border-radius: 3px; /* Bordas arredondadas */
+    border: 1px; /* Espessura da borda */
+    box-shadow: 0 0 0 1px gray; /* Sombra cinza ao redor */
+}
+
+/* Efeito ao focar ou passar o mouse nos campos do formulário */
+.metodos-contato form input:focus,
+.metodos-contato form textarea:focus{
+    outline-color: steelblue; /* Cor da borda de foco */
+    box-shadow: 0 0 0 1px steelblue; /* Sombra azul */
+    border-color: steelblue; /* Borda azul */
+}
+.metodos-contato form input:hover,
+.metodos-contato form textarea:hover{
+    outline-color: steelblue; /* Cor da borda de foco */
+    box-shadow: 0 0 0 1px steelblue; /* Sombra azul */
+    border-color: steelblue; /* Borda azul */
+}
+
+/* Textarea do formulário */
+.metodos-contato form textarea{
+    height: 100px; /* Altura fixa */
+    resize: none; /* Não permite redimensionar */
+}
+
+/* Botão do formulário de contato */
+.metodos-contato form button{
+    width: 24%; /* Largura relativa ao bloco pai */
+    min-width: 70px;
+    background-color:aliceblue; /* Fundo claro */
+    border-radius: 5px; /* Bordas arredondadas */
+    border-color: inherit; /* Herda cor da borda */
+    font-family: 'bungee'; /* Fonte personalizada */
+    font-weight: normal; /* Peso normal */
+    padding: 8px; /* Espaço interno */
+    border-style: ridge; /* Borda com relevo */
+    margin-top: 5px; /* Espaço acima */
+    cursor: pointer; /* Cursor de mãozinha */
+}
+
+/* Efeito hover no botão do formulário */
+.metodos-contato form button:hover{
+    background-color: cornflowerblue; /* Fundo azul */
+    color: aliceblue; /* Texto claro */
+    box-shadow: 0 0 0  2px steelblue; /* Sombra azul */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: all 0.2s; /* Transição suave */
+    border-style: double; /* Borda dupla ao redor */
 }

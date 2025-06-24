@@ -4,23 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Games Shop</title>
-    <link rel="stylesheet" href="./style.css">
-
+<!-- Links para fonts personalizadas do google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<!-- link para arquivo css -->
+    <link rel="stylesheet" href="./style.css">
 <body>
+    <!-- cabeçalho da pagina -->
     <header>
         <div class="menu">
             <h1>Games Shop</h1>
-            <nav>
-                <ul>
+            <nav><!-- Menu navegacional -->
+                <ul><!-- list a não ordenada de itens linkados do menu -->
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#contato">contato</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+    <!-- Inicio da sessão de apresentação da pagina -->
     <section id="home">
         <div class="container">
             <img src="./loja.jpg" alt="fachada da loja Games Shop" id="fachada">
@@ -40,10 +43,49 @@
             </div>
         </div>
     </section>
+    <!-- inicio da sessão de contatos da pagina -->
+    <section id="contato">
+        <div class="container">
+            <h2>CONTATO</h2>
+            <div class="metodos-contato">
+                <div class="d1">
+                    <h3>Fale conosco</h3>
+                    <form class="contato">
+                        <input type="text" placeholder="Seu Nome" required>
+                        <input type="email" placeholder="Seu e-mail" required>
+                        <input type="tel" placeholder="Seu telefone (opcional)">
+                        <textarea placeholder="Deixe sua mensagem" required></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+                <div class="d2">
+                    <h3>Nos acompanhe</h3>
+                    <ul class="midias-sociais">
+                        <li>
+                            <img src="./instagram.png" alt="logo instagram">
+                            <a href="#" title="Siga-nos no instagram">Instagram</a>
+                        </li>
+                        <li>
+                            <img src="./facebook.png" alt="logo facebook">
+                            <a href="#" title="Siga-nos no facebook">facebook</a>
+                        </li>
+                        <li>
+                            <img src="./youtube.png" alt="logo youtube">
+                            <a href="#" title="Visite nosso canal no YouTube">YouTube</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d3">
+                    <h3>Onde nos encontrar</h3>
+                    <p>R. Java nº 375 - Vila CSS<br>Bauru-SP</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer>
         <div class="rodape">
             <span>
-                Todos os direitos reservados<br>@Copyright
+                &copy;Todos os direitos reservados<br>2024
             </span>
         </div>
     </footer>
