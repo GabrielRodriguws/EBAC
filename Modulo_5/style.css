@@ -174,24 +174,45 @@ header{
     display: flex; /* Layout flexível */
     justify-content: space-between; /* Espaço entre blocos */
     flex-wrap: wrap; /* Permite quebra de linha */
-    max-width: 1366px;
-    width: 100%;
+    max-width: 1366px; /* largura maxima da div pai */
+    width: 100%; /* define que a div pai deve ocupar todo a largura de tela disponibilizada */
     align-items: flex-start;
 
 }
-
+/* definindo espaçamento responsivo para as div dentro da divi pai */
 .metodos-contato div{
-    width: 33%;
+    width: 33%; /* define a largura das div filha dentro da div pai*/
     min-width: 200px;
 }
 
-.d1{
-}
-
+/* segunda div ou div do meio, define uma posição centralizada para os itens dessa div */
 .d2{
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
 }
 
+/* o mesmo processo mas para outros tipos de itens */
+.d2 img, .d2 li{
+    justify-content: center;
+    align-items: normal;
+    align-content: center;
+    text-align: center;
+}
+
+/* terceira div ou div do fim da tela a direta, define que os itens devem estar alinhados ao final a direita detertminado pela div pai */
 .d3{
+    justify-content: flex-end;
+    align-items: flex-end;
+    align-content: flex-end;
+    text-align: end;
+}
+
+.d3 p{
+    padding: 0px;
+    text-align: right;
+    width: 100%;
 }
 
 /* Inputs e textarea do formulário de contato */
