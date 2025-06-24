@@ -157,9 +157,9 @@ header{
 /* Imagens das mídias sociais */
 .midias-sociais img{
     height: auto; /* Altura automática */
-    width: 8vw; /* Largura relativa à tela */
+    width: 10%; /* Largura relativa à tela */
     min-width: 24px; /* Largura mínima */
-    max-width: 38px; /* Largura máxima */
+    max-width: 48px; /* Largura máxima */
     margin-right: 0px; /* Sem espaço à direita */
     margin-bottom: 20px; /* Espaço abaixo */
 }
@@ -174,16 +174,21 @@ header{
     display: flex; /* Layout flexível */
     justify-content: space-between; /* Espaço entre blocos */
     flex-wrap: wrap; /* Permite quebra de linha */
-    gap: 10px; /* Espaço entre blocos */
+    max-width: 1366px;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.metodos-contato div{
+    width: 33%;
+    min-width: 200px;
 }
 
 /* Inputs e textarea do formulário de contato */
 .metodos-contato form input,
 .metodos-contato form textarea{
     display: block; /* Ocupa linha inteira */
-    width: 100%; /* Ocupa toda a largura do bloco pai */
-    min-width: 260px; /* Largura mínima */
-    max-width: 430px; /* Largura máxima */
+    width: 80%; /* largura ocupada dentro da sua div */
     margin-bottom: 5px; /* Espaço abaixo */
     padding: 5px; /* Espaço interno */
     border-style: ridge; /* Borda com relevo */
@@ -214,7 +219,8 @@ header{
 
 /* Botão do formulário de contato */
 .metodos-contato form button{
-    width: 28%; /* Largura relativa ao bloco pai */
+    width: 24%; /* Largura relativa ao bloco pai */
+    min-width: 70px;
     background-color:aliceblue; /* Fundo claro */
     border-radius: 5px; /* Bordas arredondadas */
     border-color: inherit; /* Herda cor da borda */
