@@ -12,12 +12,12 @@ numeros =7;
 
 //condições (else if)
 // variavel do else if
-
+/*
 let idade = prompt('bem vindo, digite sua idade')
 
 const resultado = idade >= 16 ? 'acesso liberado' : 'idade minima nescessaria de 16 anos'
 alert(resultado)
-
+*/
 if(nomes == 'felipe'){
     console.log('verdadeiro!')
 }
@@ -53,3 +53,14 @@ for(let i = 0; i < nomes.length;){
     console.log('o nome é: '+ nomes[i])
     i++
 }
+
+
+let anoAtual = 2025
+
+    function descobrirIdade(){
+        document.getElementById('resultadoIdade').textContent = '';
+            let anoNascimento = document.getElementById('anoNascimento').value;
+            let idade = anoAtual - anoNascimento;
+            const resultado = idade >= 16 ? 'Vamos seguir com o cadastramento.' : 'Para se cadastrar a idade minima é de 16 anos.'
+            document .getElementById('resultadoIdade').textContent = resultado;
+    }
