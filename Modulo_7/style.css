@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(9, 9, 31);
+    color: aliceblue;
+}
+
+.container{
+    display: block;
+    width: 100%;
+    max-width: 960px;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.container h1, .container h2{
+    display: block;
+    width: 100%;
+    max-width: 960px;
+    align-items: flex-start;
+    text-align: left;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.container form input,
+.container form textarea,
+.container form button {
+    display: block;
+    width: 100%;
+    max-width: 960px;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.container form input:focus,
+.container form textarea:focus,
+.container form button:focus{
+    border-style: double;
+    border-color: steelblue;
+}
+
+.container form input:focus-visible,
+.container form textarea:focus-visible,
+.container form button:focus-visible{
+    outline: none;
+}
+
+.container form textarea{
+    height: 90px;
+    resize: none;
+}
+.container form button{
+    background-color: steelblue;
+    border-style: none;
+    color: aliceblue;
+}
+
+.container form button:hover{
+    cursor: pointer;
+}
+
+.mensagemSucesso{
+    background-color: steelblue;
+    padding: 25px;
+    color: aliceblue;
+    display: none;
+}
+
+.mensagemErro{
+    background-color: brown;
+    color: aliceblue;
+    font-size: 12px;
+    padding: 8px;
+    display: none;
+}
+
+/* Remove setas dos inputs type="number" (Webkit browsers) */
+.container form input[type="number"]::-webkit-inner-spin-button,
+.container form input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none; /* Remove as setas padrão */
+    margin: 0;                /* Remove margem extra */
+}
+
+/* Remove setas dos inputs type="number" (Firefox) */
+.container form input[type="number"] {
+    -moz-appearance: textfield; /* Remove as setas no Firefox */
+}
