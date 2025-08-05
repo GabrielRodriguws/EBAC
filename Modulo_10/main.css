@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header > .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hamburgerMenu span {
+    width: 32px;
+    height: 2px;
+    background-color: azure;
+    display: block;
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+
+header {
+    background-color: #192a56;
+    padding: 16px 0;
+    color: #fff;
+}
+
+nav {
+    background-color: rgb(34, 34, 154);
+    padding: 16px 0;
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+    margin-right: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+}
