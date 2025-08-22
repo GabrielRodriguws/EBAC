@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EBAC Motors</title>
+    <title>GRS Motors</title>
     <link rel="preconnect" href="http://fonts.googleapis.com">
     <link rel="preconnect" href="http://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
 <body>
     <header>
         <div class="headerMenu">
-            <h1>EBAC Motors</h1>
+            <h1>GRS Motors</h1>
             <div class="hamburgerMenu">
                 <span></span>
                 <span></span>
@@ -50,7 +50,7 @@
         <div class="containerFlex container">
             <img src="./images/loja.jpg" alt="">
             <div class="paragrafoSobre">
-                <h2>Sobre a EBAC motors</h2>
+                <h2>Sobre a GRS motors</h2>
                 <p>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. At quos cupiditate officiis voluptas vitae temporibus dolorem totam, consequuntur, odio vero quisquam, itaque esse reprehenderit repellendus est quibusdam incidunt fugit ipsam!
                 </p>
@@ -77,13 +77,13 @@
                 </li>
                 
                 <li class="itemCentral">
-                    <img src="./images/carro-bmw.png" alt="">
-                    <h3>BMW</h3>
+                    <img src="./images/virtus.jpg" alt="">
+                    <h3>Virtus</h3>
                     <p>
                         Câmbio automático, 4 portas, vidros e travas elétricas
                     </p>
                     <div class="price">
-                        <strong>R$: 230.000,00</strong>
+                        <strong>R$: 190.000,00</strong>
                     </div>
                     <button type="button">Tenho interesse</button>
                 </li>
@@ -107,60 +107,60 @@
             <h2>Ofertas</h2>
             <ul class="containerFlex listaVeiculos">
                 <li>
-                    <img src="./images/carro-bmw.png" alt="">
-                    <h3>BMW</h3>
+                    <img src="./images/fusca.png" alt="">
+                    <h3>Fusca 2000, 86</h3>
                     <p>
-                        Câmbio automático, 4 portas, vidros e travas elétricas
+                        Câmbio manual, 2 portas, refrigerado a ar.
                     </p>
                     <div class="price">
-                        De:<br><del>R$: 230.000,00</del> <br><br>
-                        Por:<br></Por:br><strong>R$: 90.000,00</strong>
+                        De:<br><del>R$: 32.000,00</del> <br><br>
+                        Por:<br></Por:br><strong>R$: 17.000,00</strong>
                     </div>
                     <button type="button">Tenho interesse</button>
                 </li>
                 
                 <li class="itemCentral">
-                    <img src="./images/carro-bmw.png" alt="">
-                    <h3>BMW</h3>
+                    <img src="./images/kadett.jpg" alt="">
+                    <h3>Kadett 1.8, 96</h3>
                     <p>
-                        Câmbio automático, 4 portas, vidros e travas elétricas
+                        Ar condicionado e direção hidraulica.
                     </p>
                     <div class="price">
-                        De:<br><del>R$: 230.000,00</del> <br><br>
-                        Por:<br></Por:br><strong>R$: 90.000,00</strong>
+                        De:<br><del>R$: 39.000,00</del> <br><br>
+                        Por:<br></Por:br><strong>R$: 21.000,00</strong>
                     </div>
                     <button type="button">Tenho interesse</button>
                 </li>
                 
                 <li>
-                    <img src="./images/carro-bmw.png" alt="">
-                    <h3>BMW</h3>
+                    <img src="./images/chevette.webp" alt="">
+                    <h3>Chevette 2.0, 91</h3>
                     <p>
-                        Câmbio automático, 4 portas, vidros e travas elétricas
+                        motor 2.0 robusto, tração traseira.
                     </p>
                     <div class="price">
-                        De:<br><del>R$: 230.000,00</del> <br><br>
-                        Por:<br></Por:br><strong>R$: 90.000,00</strong>
+                        De:<br><del>R$: 19.000,00</del> <br><br>
+                        Por:<br></Por:br><strong>R$: 14.000,00</strong>
                     </div>
                     <button type="button">Tenho interesse</button>
                 </li>
             </ul>
         </div>
     </section>
-    <section class="contato">
+    <section id="contato">
         <div class="container">
             <form>
                 <div>
                     <label for="nome">Nome:</label>
-                    <input type="text" id="nome">
+                    <input type="text" id="nome" name="nome">
                 </div>
                 <div>
                     <label for="telefone">Telefone:</label>
-                    <input type="tel" id="telefone">
+                    <input type="tel" id="telefone" name="telefone">
                 </div>
                 <div>
                     <label for="email">E-mail:</label>
-                    <input type="email" id="email">
+                    <input type="email" id="email" name="email">
                 </div>
                 <div>
                     <label for="veiculoInteresse">Veículo de interesse:</label>
@@ -170,14 +170,21 @@
                     <label for="mensagem">Deixe sua mensagem:</label>
                     <textarea id="mensagem"></textarea>
                 </div>
-                <button type="button">Enviar</button>
+                <button type="submit">Enviar</button>
             </form>
         </div>
     </section>
-
+    <footer>
+        <div class="container">
+            &copy; GRS motors. <br>Todos os direitos reservados
+        </div>
+    </footer>
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="./script.js"></script>
+<script src="./js.plugin/jquery.mask.min.js"></script>
+<script src="./js.plugin/jquery.validate.min.js"></script>
+<script src="./js.plugin/messages_pt_BR.min.js"></script>
 </body>
 </html>

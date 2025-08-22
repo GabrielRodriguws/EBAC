@@ -41,6 +41,7 @@ menu{
 header {
     background-color: #192a56;
     padding-top: 16px;
+    padding-bottom: 12px;
     color: #fff;
 }
 
@@ -173,4 +174,11 @@ form button {
 form textarea {
     resize: none;
     height: 90px;
+}
+
+footer {
+    text-align: center;
+    background-color: #192a56;
+    color: #fff;
+    padding:10px 0 ;
 }
