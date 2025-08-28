@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1366px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    border-bottom: 4px solid brown;
+}
+
+.menu {
+    display: block;
+}
+
+.menu > ul {
+    display: flex;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.drop {
+    margin-left: 16px;
+    position: relative;
+}
+
+.dropdown {
+    margin-right: 26px;
+}
+
+.submenu {
+    display: none;
+    padding: 16px 2px;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    border: 3px solid brown;
+    max-width: 244px;
+}
+
+
+.submenu > li {
+    margin-bottom: 2px;
+}
+
+header h1 {
+    margin-bottom: 20px;
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+.conteudo {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.conteudo .artigos a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.artigos a img {
+    width: 100%;
+}
+
+section h2 {
+    margin-bottom: 46px;
+    font-size: 2em;
+}
+
+.destaque  a {
+    display: flex;
+}
+
+.destaque .artigos {
+    margin-bottom: 76px;
+}
+
+.destaque h3 {
+    font-size: 1.8em;
+}
+
+.destaque img {
+    margin-right: 16px;
+}
+
+.novidades {
+    padding-left: 28px;
+}
+
+.novidades .artigos {
+    margin-bottom: 66px;
+}
+
+.noticias div {
+    display: grid;
+    grid-template-columns: repeat(3, 32.6%);
+    column-gap: 1%;
+    row-gap: 5%;
+}
